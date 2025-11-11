@@ -1,0 +1,44 @@
+{
+  "required_api_version": "2",
+  "api_version": "v2.0.0",
+  "name": "FindDirs",
+  "developer_name": "Guilherme Oliveira" ,
+  "description": "Busca arquivos na home ou em / usando o comando find",
+  "icon": "images/icon.png",
+  "preferences": [
+    {
+      "id": "fd",
+      "type": "keyword",
+      "name": "Palavra-chave: Buscar Arquivos (fd)",
+      "default_value": "fd"
+    },
+    {
+      "id": "fdir",
+      "type": "keyword",
+      "name": "Palavra-chave: Buscar Apenas Diretórios",
+      "default_value": "fdir"
+    },
+    {
+      "id": "dir",
+      "type": "text",
+      "name": "Path de Busca",
+      "description": "Diretório inicial da busca (ex: ~ ou /mnt/dados)",
+      "default_value": "~"
+    },
+    {
+      "id": "cut",
+      "type": "text",
+      "name": "Limite de Resultados",
+      "description": "Número máximo de itens a serem exibidos (Ex: 10)",
+      "default_value": "10"
+    },
+    {
+      "id": "show_dirs",
+      "type": "text",
+      "name": "Mostrar Diretório Pai (yes/no)",
+      "description": "Exibir o item '↑Dir' para cada arquivo encontrado.",
+      "default_value": "yes"
+    }
+  ]
+
+}
